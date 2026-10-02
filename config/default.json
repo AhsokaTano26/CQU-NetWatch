@@ -1,0 +1,92 @@
+{
+  "title": "CQU NetProbe",
+  "prometheusUrl": "",
+  "refreshSeconds": 30,
+  "cacheSeconds": 15,
+  "timeoutMs": 8000,
+  "labels": {
+    "campus": "campus",
+    "building": "building",
+    "group": "building_group",
+    "probe": "probe_id",
+    "network": "network_type",
+    "target": "target"
+  },
+  "thresholds": {
+    "lossWarning": 0.01,
+    "lossUnstable": 0.05,
+    "jitterUnstable": 30,
+    "flapUnstable": 3,
+    "sampleMaxAge": 180,
+    "reportOfflineSeconds": 1800,
+    "nodeOfflineSeconds": 86400
+  },
+  "metrics": {
+    "online": {
+      "query": "((time() - campus_probe_last_seen_timestamp_seconds{{selector}}) < bool {{reportOfflineSeconds}}) and ((time() - campus_probe_last_seen_timestamp_seconds{{selector}}) <= {{nodeOfflineSeconds}}) and ((time() - campus_probe_last_seen_timestamp_seconds{{selector}}) >= -30)",
+      "scale": 1,
+      "freshnessMetric": "campus_probe_last_seen_timestamp_seconds"
+    },
+    "lastSeen": {
+      "query": "campus_probe_last_seen_timestamp_seconds{{selector}}",
+      "scale": 1,
+      "freshnessMetric": "campus_probe_last_seen_timestamp_seconds"
+    },
+    "loss": {
+      "query": "campus_probe_icmp_loss_ratio{{selector}}",
+      "scale": 1,
+      "freshOnly": true,
+      "freshnessMetric": "campus_probe_icmp_loss_ratio"
+    },
+    "lossWindow": {
+      "query": "avg_over_time(campus_probe_icmp_loss_ratio{{selector}}[5m])",
+      "scale": 1,
+      "freshOnly": true,
+      "freshnessMetric": "campus_probe_icmp_loss_ratio"
+    },
+    "latency": {
+      "query": "campus_probe_icmp_rtt_seconds{{selector}}",
+      "scale": 1000,
+      "freshOnly": true,
+      "freshnessMetric": "campus_probe_icmp_rtt_seconds"
+    },
+    "jitter": {
+      "query": "campus_probe_icmp_jitter_seconds{{selector}}",
+      "scale": 1000,
+      "freshOnly": true,
+      "freshnessMetric": "campus_probe_icmp_jitter_seconds"
+    },
+    "http": {
+      "query": "campus_probe_http_success{{selector}}",
+      "scale": 1,
+      "freshOnly": true,
+      "freshnessMetric": "campus_probe_http_success"
+    },
+    "httpLatency": {
+      "query": "campus_probe_http_duration_seconds{{selector}}",
+      "scale": 1000,
+      "freshOnly": true,
+      "freshnessMetric": "campus_probe_http_duration_seconds"
+    },
+    "httpCode": {
+      "query": "campus_probe_http_status_code{{selector}}",
+      "scale": 1,
+      "freshOnly": true,
+      "instantOnly": true,
+      "freshnessMetric": "campus_probe_http_status_code"
+    },
+    "flaps": {
+      "query": "changes((((time() - campus_probe_last_seen_timestamp_seconds{{selector}}) < bool {{reportOfflineSeconds}}) and ((time() - campus_probe_last_seen_timestamp_seconds{{selector}}) <= {{nodeOfflineSeconds}}) and ((time() - campus_probe_last_seen_timestamp_seconds{{selector}}) >= -30))[10m:30s])",
+      "scale": 1,
+      "freshnessMetric": "campus_probe_last_seen_timestamp_seconds"
+    }
+  },
+  "events": {
+    "enabled": true,
+    "minSamples": 144,
+    "lossCriticalFloor": 0.05,
+    "p99Margin": 0.02,
+    "campusMinBuildings": 3,
+    "campusRatio": 0.6
+  }
+}

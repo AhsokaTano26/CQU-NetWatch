@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.env
+config/local.json
+*.log
+.DS_Store
+playwright-report/
+test-results/
+.idea/

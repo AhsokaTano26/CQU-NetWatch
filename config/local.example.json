@@ -1,0 +1,13 @@
+{
+  "prometheusUrl": "http://127.0.0.1:9090",
+  "matchers": { "job": "netprobe-gateway" },
+  "refreshSeconds": 30,
+  "cacheSeconds": 15,
+  "thresholds": {
+    "lossWarning": 0.01,
+    "lossUnstable": 0.05,
+    "jitterUnstable": 30,
+    "flapUnstable": 3,
+    "sampleMaxAge": 180
+  }
+}

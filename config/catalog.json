@@ -1,0 +1,543 @@
+{
+  "campuses": [
+    {
+      "id": "spba",
+      "name": "沙坪坝校区 · A校园",
+      "region": "spb"
+    },
+    {
+      "id": "spbb",
+      "name": "沙坪坝校区 · B校园",
+      "region": "spb"
+    },
+    {
+      "id": "spbc",
+      "name": "沙坪坝校区 · C校园",
+      "region": "spb"
+    },
+    {
+      "id": "hx",
+      "name": "科学城校区 · 虎溪校园",
+      "region": "hx"
+    },
+    {
+      "id": "lj",
+      "name": "两江校区",
+      "region": "lj"
+    }
+  ],
+  "groups": {
+    "a_dorm": "A区宿舍",
+    "a_acd": "ACD楼",
+    "a_other": "其他楼栋",
+    "b_dorm": "B区宿舍",
+    "b_other": "其他楼栋",
+    "c_dorm": "C区宿舍",
+    "my": "梅园",
+    "sy": "松园",
+    "zy": "竹园",
+    "ly": "兰园",
+    "hy": "荷园",
+    "jy": "博士生公寓",
+    "lj_dorm": "宿舍区"
+  },
+  "buildings": [
+    {
+      "id": "spba-a01",
+      "campus": "spba",
+      "group": "a_dorm",
+      "building": "a01",
+      "name": "A区1舍"
+    },
+    {
+      "id": "spba-a02",
+      "campus": "spba",
+      "group": "a_dorm",
+      "building": "a02",
+      "name": "A区2舍"
+    },
+    {
+      "id": "spba-a03",
+      "campus": "spba",
+      "group": "a_dorm",
+      "building": "a03",
+      "name": "A区3舍"
+    },
+    {
+      "id": "spba-a04",
+      "campus": "spba",
+      "group": "a_dorm",
+      "building": "a04",
+      "name": "A区4舍"
+    },
+    {
+      "id": "spba-a05",
+      "campus": "spba",
+      "group": "a_dorm",
+      "building": "a05",
+      "name": "A区5舍"
+    },
+    {
+      "id": "spba-a06",
+      "campus": "spba",
+      "group": "a_dorm",
+      "building": "a06",
+      "name": "A区6舍"
+    },
+    {
+      "id": "spba-a07",
+      "campus": "spba",
+      "group": "a_dorm",
+      "building": "a07",
+      "name": "A区7舍"
+    },
+    {
+      "id": "spba-a08",
+      "campus": "spba",
+      "group": "a_dorm",
+      "building": "a08",
+      "name": "A区8舍"
+    },
+    {
+      "id": "spba-a09",
+      "campus": "spba",
+      "group": "a_dorm",
+      "building": "a09",
+      "name": "A区9舍"
+    },
+    {
+      "id": "spba-a10",
+      "campus": "spba",
+      "group": "a_dorm",
+      "building": "a10",
+      "name": "A区10舍"
+    },
+    {
+      "id": "spba-a11",
+      "campus": "spba",
+      "group": "a_dorm",
+      "building": "a11",
+      "name": "A区11舍"
+    },
+    {
+      "id": "spba-a12",
+      "campus": "spba",
+      "group": "a_dorm",
+      "building": "a12",
+      "name": "A区12舍"
+    },
+    {
+      "id": "spbb-b01",
+      "campus": "spbb",
+      "group": "b_dorm",
+      "building": "b01",
+      "name": "B区1舍"
+    },
+    {
+      "id": "spbb-b02",
+      "campus": "spbb",
+      "group": "b_dorm",
+      "building": "b02",
+      "name": "B区2舍"
+    },
+    {
+      "id": "spbb-b03",
+      "campus": "spbb",
+      "group": "b_dorm",
+      "building": "b03",
+      "name": "B区3舍"
+    },
+    {
+      "id": "spbb-b04",
+      "campus": "spbb",
+      "group": "b_dorm",
+      "building": "b04",
+      "name": "B区4舍"
+    },
+    {
+      "id": "spbb-b05",
+      "campus": "spbb",
+      "group": "b_dorm",
+      "building": "b05",
+      "name": "B区5舍"
+    },
+    {
+      "id": "spbb-b06",
+      "campus": "spbb",
+      "group": "b_dorm",
+      "building": "b06",
+      "name": "B区6舍"
+    },
+    {
+      "id": "spbb-b07",
+      "campus": "spbb",
+      "group": "b_dorm",
+      "building": "b07",
+      "name": "B区7舍"
+    },
+    {
+      "id": "spbb-b08",
+      "campus": "spbb",
+      "group": "b_dorm",
+      "building": "b08",
+      "name": "B区8舍"
+    },
+    {
+      "id": "spbb-b09",
+      "campus": "spbb",
+      "group": "b_dorm",
+      "building": "b09",
+      "name": "B区9舍"
+    },
+    {
+      "id": "spbb-b10",
+      "campus": "spbb",
+      "group": "b_dorm",
+      "building": "b10",
+      "name": "B区10舍"
+    },
+    {
+      "id": "spbb-b11",
+      "campus": "spbb",
+      "group": "b_dorm",
+      "building": "b11",
+      "name": "B区11舍"
+    },
+    {
+      "id": "spbb-b12",
+      "campus": "spbb",
+      "group": "b_dorm",
+      "building": "b12",
+      "name": "B区12舍"
+    },
+    {
+      "id": "spbc-c01",
+      "campus": "spbc",
+      "group": "c_dorm",
+      "building": "c01",
+      "name": "C区1舍"
+    },
+    {
+      "id": "spbc-c02",
+      "campus": "spbc",
+      "group": "c_dorm",
+      "building": "c02",
+      "name": "C区2舍"
+    },
+    {
+      "id": "spbc-c03",
+      "campus": "spbc",
+      "group": "c_dorm",
+      "building": "c03",
+      "name": "C区3舍"
+    },
+    {
+      "id": "spbc-c04",
+      "campus": "spbc",
+      "group": "c_dorm",
+      "building": "c04",
+      "name": "C区4舍"
+    },
+    {
+      "id": "spbc-c05",
+      "campus": "spbc",
+      "group": "c_dorm",
+      "building": "c05",
+      "name": "C区5舍"
+    },
+    {
+      "id": "spba-acd",
+      "campus": "spba",
+      "group": "a_acd",
+      "building": "acd",
+      "name": "ACD楼"
+    },
+    {
+      "id": "spba-xlbg",
+      "campus": "spba",
+      "group": "a_other",
+      "building": "xlbg",
+      "name": "学林宾馆"
+    },
+    {
+      "id": "spbb-qjl",
+      "campus": "spbb",
+      "group": "b_other",
+      "building": "qjl",
+      "name": "青教楼"
+    },
+    {
+      "id": "hx-my01",
+      "campus": "hx",
+      "group": "my",
+      "building": "my01",
+      "name": "梅园1栋"
+    },
+    {
+      "id": "hx-my02",
+      "campus": "hx",
+      "group": "my",
+      "building": "my02",
+      "name": "梅园2栋"
+    },
+    {
+      "id": "hx-my03",
+      "campus": "hx",
+      "group": "my",
+      "building": "my03",
+      "name": "梅园3栋"
+    },
+    {
+      "id": "hx-my04",
+      "campus": "hx",
+      "group": "my",
+      "building": "my04",
+      "name": "梅园4栋"
+    },
+    {
+      "id": "hx-my05",
+      "campus": "hx",
+      "group": "my",
+      "building": "my05",
+      "name": "梅园5栋"
+    },
+    {
+      "id": "hx-my06",
+      "campus": "hx",
+      "group": "my",
+      "building": "my06",
+      "name": "梅园6栋"
+    },
+    {
+      "id": "hx-my07",
+      "campus": "hx",
+      "group": "my",
+      "building": "my07",
+      "name": "梅园7栋"
+    },
+    {
+      "id": "hx-sy01",
+      "campus": "hx",
+      "group": "sy",
+      "building": "sy01",
+      "name": "松园1栋"
+    },
+    {
+      "id": "hx-sy02",
+      "campus": "hx",
+      "group": "sy",
+      "building": "sy02",
+      "name": "松园2栋"
+    },
+    {
+      "id": "hx-sy03",
+      "campus": "hx",
+      "group": "sy",
+      "building": "sy03",
+      "name": "松园3栋"
+    },
+    {
+      "id": "hx-sy04",
+      "campus": "hx",
+      "group": "sy",
+      "building": "sy04",
+      "name": "松园4栋"
+    },
+    {
+      "id": "hx-sy05",
+      "campus": "hx",
+      "group": "sy",
+      "building": "sy05",
+      "name": "松园5栋"
+    },
+    {
+      "id": "hx-sy06",
+      "campus": "hx",
+      "group": "sy",
+      "building": "sy06",
+      "name": "松园6栋"
+    },
+    {
+      "id": "hx-sy07",
+      "campus": "hx",
+      "group": "sy",
+      "building": "sy07",
+      "name": "松园7栋"
+    },
+    {
+      "id": "hx-zy01",
+      "campus": "hx",
+      "group": "zy",
+      "building": "zy01",
+      "name": "竹园1栋"
+    },
+    {
+      "id": "hx-zy02",
+      "campus": "hx",
+      "group": "zy",
+      "building": "zy02",
+      "name": "竹园2栋"
+    },
+    {
+      "id": "hx-zy03",
+      "campus": "hx",
+      "group": "zy",
+      "building": "zy03",
+      "name": "竹园3栋"
+    },
+    {
+      "id": "hx-zy04",
+      "campus": "hx",
+      "group": "zy",
+      "building": "zy04",
+      "name": "竹园4栋"
+    },
+    {
+      "id": "hx-zy05",
+      "campus": "hx",
+      "group": "zy",
+      "building": "zy05",
+      "name": "竹园5栋"
+    },
+    {
+      "id": "hx-zy06",
+      "campus": "hx",
+      "group": "zy",
+      "building": "zy06",
+      "name": "竹园6栋"
+    },
+    {
+      "id": "hx-ly01",
+      "campus": "hx",
+      "group": "ly",
+      "building": "ly01",
+      "name": "兰园1栋"
+    },
+    {
+      "id": "hx-ly02",
+      "campus": "hx",
+      "group": "ly",
+      "building": "ly02",
+      "name": "兰园2栋"
+    },
+    {
+      "id": "hx-ly03",
+      "campus": "hx",
+      "group": "ly",
+      "building": "ly03",
+      "name": "兰园3栋"
+    },
+    {
+      "id": "hx-ly04",
+      "campus": "hx",
+      "group": "ly",
+      "building": "ly04",
+      "name": "兰园4栋"
+    },
+    {
+      "id": "hx-ly05",
+      "campus": "hx",
+      "group": "ly",
+      "building": "ly05",
+      "name": "兰园5栋"
+    },
+    {
+      "id": "hx-ly06",
+      "campus": "hx",
+      "group": "ly",
+      "building": "ly06",
+      "name": "兰园6栋"
+    },
+    {
+      "id": "hx-ly07",
+      "campus": "hx",
+      "group": "ly",
+      "building": "ly07",
+      "name": "兰园7栋"
+    },
+    {
+      "id": "hx-ly08",
+      "campus": "hx",
+      "group": "ly",
+      "building": "ly08",
+      "name": "兰园8栋"
+    },
+    {
+      "id": "hx-hy01",
+      "campus": "hx",
+      "group": "hy",
+      "building": "hy01",
+      "name": "荷园1栋"
+    },
+    {
+      "id": "hx-hy02",
+      "campus": "hx",
+      "group": "hy",
+      "building": "hy02",
+      "name": "荷园2栋"
+    },
+    {
+      "id": "hx-hy03",
+      "campus": "hx",
+      "group": "hy",
+      "building": "hy03",
+      "name": "荷园3栋"
+    },
+    {
+      "id": "hx-hy04",
+      "campus": "hx",
+      "group": "hy",
+      "building": "hy04",
+      "name": "荷园4栋"
+    },
+    {
+      "id": "hx-hy05",
+      "campus": "hx",
+      "group": "hy",
+      "building": "hy05",
+      "name": "荷园5栋"
+    },
+    {
+      "id": "hx-hy06",
+      "campus": "hx",
+      "group": "hy",
+      "building": "hy06",
+      "name": "荷园6栋"
+    },
+    {
+      "id": "hx-hy07",
+      "campus": "hx",
+      "group": "hy",
+      "building": "hy07",
+      "name": "荷园7栋"
+    },
+    {
+      "id": "hx-hy08",
+      "campus": "hx",
+      "group": "hy",
+      "building": "hy08",
+      "name": "荷园8栋"
+    },
+    {
+      "id": "hx-jy",
+      "campus": "hx",
+      "group": "jy",
+      "building": "jy",
+      "name": "菊园博士楼"
+    },
+    {
+      "id": "lj-lj01",
+      "campus": "lj",
+      "group": "lj_dorm",
+      "building": "lj01",
+      "name": "两江1栋"
+    },
+    {
+      "id": "lj-lj02",
+      "campus": "lj",
+      "group": "lj_dorm",
+      "building": "lj02",
+      "name": "两江2栋"
+    }
+  ]
+}
